@@ -21,8 +21,8 @@ const SearchResult = () => {
         dispatch( getUserSearchResult());
     }, [])
     return (
-        <div className='search-container' style={{
-            height: '100vh',
+        <div className='search-container vh-100' style={{
+            // height: '100vh',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -31,14 +31,14 @@ const SearchResult = () => {
             <div className='result-container'>
                 <div className='row'>
                     {
-                        searchResult && searchResult.map((data, index) => {
+                        searchResult ? (searchResult.map((data, index) => {
                             return (
                                 
-                                    <div className='col-3' >
+                                    <div className='col-md-6 col-lg-3' >
                                         <InfoCard data={data} />
                                     </div>
                             )
-                        })
+                        })) : (<h2>Loading...</h2>)
                     }
 
 
