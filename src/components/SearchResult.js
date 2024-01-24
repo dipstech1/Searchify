@@ -3,10 +3,11 @@ import axios from 'axios';
 import { getUserSearchResult } from '../services/searchService';
 import InfoCard from './InfoCard';
 import { useDispatch, useSelector } from 'react-redux';
+import {  useParams } from 'react-router-dom';
 
 const SearchResult = () => {
-    const [result, setResult] = useState([]);
-
+    const {searchStr} = useParams();
+    console.log("params ", searchStr);
     const dispatch = useDispatch();
     
     const {searchResult} = useSelector((state) => state?.search)
@@ -18,7 +19,7 @@ const SearchResult = () => {
         //     setResult(result)
         // }
         // searchResultData()
-        dispatch( getUserSearchResult());
+        dispatch( getUserSearchResult(searchStr));
     }, [])
     return (
         <div className='search-container vh-100' style={{

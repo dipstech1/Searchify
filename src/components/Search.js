@@ -28,7 +28,7 @@ const Search = () => {
 
     const handleOnSelect = (item) => {
         // the item selected
-        navigate("/result")
+        navigate(`/result/${item.name}`)
     }
 
     const formatResult = (item) => {

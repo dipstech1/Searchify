@@ -1,19 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Search from './components/Search';
-import SearchResult from './components/SearchResult';
+
+import SearchifyRouter from './routes/routes';
 
 function App() {
   return (
     <div>
-        <Header />
-        <div>
-          <Routes>
-            <Route path='' element={<Search />}></Route>
-            <Route path='/result' element={<SearchResult />} ></Route>
-          </Routes>
-        </div>
+      <Header />
+      <div id="page-content">
+
+        {
+          SearchifyRouter()
+        }
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }

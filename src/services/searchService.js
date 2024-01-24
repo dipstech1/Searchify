@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { GET } from './http.service';
 
 const TRAVEL_DATA = [
     {id:1, name : "India"},
@@ -27,9 +27,10 @@ export const getUserSearch = async(searchStr) => {
 
 export const getUserSearchResult = createAsyncThunk(
     '[search-api]',
-    async(thunkAPI) => {
+    async(searchStr,thunkAPI) => {
         try {
-            let res = await axios.get(`https://jsonplaceholder.typicode.com/photos`);
+            // let res = await axios.get(`https://jsonplaceholder.typicode.com/photos?search=${searchStr}`);
+            let res = await GET(`https://jsonplaceholder.typicode.com/photos`,{searchStr})
             return res.data
         } catch (error) {
             return thunkAPI.rejectWithValue("Error");

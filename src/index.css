@@ -23,3 +23,7 @@ body {
   padding: 15px;
   margin: 15px;
 }
+
+#page-content {
+  flex: 1 0 auto;
+}
