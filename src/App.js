@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 
 import SearchifyRouter from './routes/routes';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           SearchifyRouter()
         }
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

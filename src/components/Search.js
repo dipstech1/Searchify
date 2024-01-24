@@ -39,7 +39,13 @@ const Search = () => {
         )
     }
     return (
-        <div className='center'>
+        <div className='center' style={{
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
             <div style={{ width: 400 }}>
                 <ReactSearchAutocomplete
                     items={items}
