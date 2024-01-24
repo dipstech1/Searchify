@@ -46,7 +46,7 @@ const Search = () => {
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            <div style={{ width: 400 }}>
+            <div className='search-width'>
                 <ReactSearchAutocomplete
                     items={items}
                     onSearch={handleOnSearch}

@@ -25,15 +25,24 @@ body {
   height: 100vh;
 }
 
+
+.search-width{
+  width: 500px;
+}
+
+#page-content {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 600px) {
   .search-container{
     padding: 15px;
     margin: 15px;
     height: auto;
   }
-}
 
-#page-content {
-  display: flex;
-  flex-direction: column;
+  .search-width{
+    width: 380px;
+  }
 }
