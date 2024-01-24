@@ -14,6 +14,12 @@ const Header = () => {
                     <li class="nav-item active">
                         <Link class="nav-link" to="" >Home </Link>
                     </li>
+                    <li class="nav-item active">
+                        <Link class="nav-link" to="" >
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-avatar-370-456322.png?f=webp" alt="avatar" height="30px" class="rounded-circle" />
+
+                             </Link>
+                    </li>
                     
                 </ul>
             </div>

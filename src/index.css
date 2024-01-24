@@ -22,6 +22,15 @@ body {
 .search-container{
   padding: 15px;
   margin: 15px;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-container{
+    padding: 15px;
+    margin: 15px;
+    height: auto;
+  }
 }
 
 #page-content {

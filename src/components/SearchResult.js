@@ -22,7 +22,7 @@ const SearchResult = () => {
         dispatch( getUserSearchResult(searchStr));
     }, [])
     return (
-        <div className='search-container vh-100' style={{
+        <div className='search-container ' style={{
             // height: '100vh',
             display: 'flex',
             flexDirection: 'column',
