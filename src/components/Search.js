@@ -53,6 +53,13 @@ const Search = () => {
                     onSelect={handleOnSelect}
                     autoFocus
                     formatResult={formatResult}
+                    styling={{
+                        backgroundColor:"black",
+                        borderRadius:"0px",
+                        backgroundColor:"#0d6efd",
+                        color:"#fff",
+                        iconColor:"#fff"
+                    }}
                 />
             </div>
         </div>
